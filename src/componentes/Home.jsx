@@ -26,26 +26,26 @@ const Home = () => {
         </header>
         <br />
         <hr />
-        <h1 /*style="text-align: center;font-family:Permanent Marker;"*/>Editoriales</h1>
+        <h1 style={{textAlign: "center"}}>Editoriales</h1>
         <br />
         <div class=" main">
              <section class="logo">
-                  <a href="./html/marvel.html" target="blank">
+                  <a href="/marvel" target="blank">
                      <div class="logoMarvel">
                          <img src={marvel} alt="marvel comics" id="logoMarvel" />
                      </div>
                   </a>
-                  <a href="./html/dc.html" target="blank">
+                  <a href="/dc" target="blank">
                      <div class="logodc">
                          <img src={dc} alt="" id="logodc" />
                     </div>
                   </a>
-                  <a href="./html/dark.html" target="blank">
+                  <a href="/dark" target="blank">
                      <div class="logodark">
                          <img src={darkhorse} alt="" id="logodark" />
                      </div>
                   </a>
-                  <a href="./html/idw.html" target="blank">
+                  <a href="/idw" target="blank">
                      <div class="logoidw">
                         <img src={idw} alt="" id="logoidw" />
                     </div>
@@ -53,7 +53,7 @@ const Home = () => {
              </section>
         </div>
         <hr />
-        <div>
+        <div style={{textAlign: "center"}}>
             <h1>Pesos Pesados del Comic</h1>
             <br />
             <p>Hay 2 nombres que no pueden faltar: Frank Miller y Alan Moore,Tanto en
@@ -76,7 +76,7 @@ const Home = () => {
            <h2 className="text-dark">Alan Moore</h2>
            <div class="logofrankAlan">
                <a href="./html/moore.html" target="blank" />
-               <img src={am} alt="" id="logofrankAlan" class="img-fluid" />
+               <img src={am} alt="AlanMoore" id="logofrankAlan" class="img-fluid" />
            </div>
        </div>
        <hr />
@@ -187,7 +187,7 @@ const Home = () => {
                            ></textarea>
                        </div>
                        {/* <button type="submit" className="btn btn-secondary" id="submit">Enviar</button> */}
-                       <Button color="secondary" variant="contained" endIcon={<SendIcon />}>Enviar</Button>
+                       <Button  color="secondary" variant="contained" endIcon={<SendIcon />}>Enviar</Button>
                        <br />
                 </form>
              </div>
